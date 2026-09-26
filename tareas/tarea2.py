@@ -80,11 +80,6 @@ with tab3:
 $$G = 1 - i \nu \sin(k \Delta x)$$Su magnitud al cuadrado es \(|G|^2 = 1 + \nu^2 \sin^2(k \Delta x)\). Al ser estrictamente mayor a 1 para \(\nu > 0\), el esquema inyecta energía espuria sistemáticamente (difusión numérica negativa).
 """)
 
-st.subheader("2. Viscosidad Artificial")
-st.markdown(r"""
-* **Courant óptimo (\(\nu = 1.0\)):** El término de difusión se anula y la matriz de diferencias finitas actúa como un operador de traslación exacta.
-* **Difusión espuria (\(\nu < 1.0\)):** El método resuelve una ecuación equivalente \(u_t + c u_x = D u_{xx}\) con \(D = \frac{c \Delta x}{2} (1 - \nu)\). A menor \(\nu\), mayor es el aplastamiento del perfil de onda.
-""")
 
 st.subheader("3. Dispersión Numérica (Lax)")
 st.markdown(r"""
